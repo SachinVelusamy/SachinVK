@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sachin V | International Business Portfolio</title>
+
+<meta name="description"
+content="Sachin V — M.Com International Business student specializing in EXIM Documentation, International Trade, Shipping and Logistics.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #080b0a;
+    --card: #111614;
+    --green: #19d98a;
+    --green2: #0fa968;
+    --white: #f5f7f6;
+    --gray: #9ba5a0;
+    --line: #26302b;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: rgba(8,11,10,.82);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.logo {
+    font-family: "Space Grotesk";
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #c7cfca;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 130px 8% 80px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: -180px;
+    top: 80px;
+
+    background: radial-gradient(
+        circle,
+        rgba(25,217,138,.20),
+        transparent 65%
+    );
+
+    filter: blur(20px);
+}
+
+.hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: 1px solid #24503d;
+
+    border-radius: 100px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: "Space Grotesk";
+
+    font-size: clamp(55px, 9vw, 110px);
+
+    line-height: .95;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero p {
+    max-width: 700px;
+
+    color: var(--gray);
+
+    font-size: 19px;
+
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+
+    padding: 14px 22px;
+
+    border-radius: 100px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: #06120c;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: #50eaa9;
+}
+
+.btn-secondary {
+    border: 1px solid #34413b;
+    color: white;
+}
+
+.btn-secondary:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 110px 8%;
+}
+
+.section-number {
+    color: var(--green);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.section-title {
+    font-family: "Space Grotesk";
+
+    font-size: clamp(40px, 6vw, 70px);
+
+    line-height: 1;
+
+    margin: 15px 0 30px;
+}
+
+.section-text {
+    color: var(--gray);
+
+    font-size: 18px;
+
+    max-width: 850px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    margin-top: 50px;
+}
+
+.info-card {
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    transition: .3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #285943;
+}
+
+.info-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--gray);
+}
+
+/* INTERNSHIP */
+
+.internship {
+    background: #0d1210;
+}
+
+.internship-card {
+    max-width: 1000px;
+
+    margin-top: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #151d19,
+        #0d1210
+    );
+
+    border: 1px solid #2b3b33;
+
+    border-radius: 30px;
+
+    padding: 45px;
+}
+
+.company {
+    color: var(--green);
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.internship-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+.internship-card p {
+    color: var(--gray);
+
+    margin-bottom: 25px;
+}
+
+.internship-list {
+    list-style: none;
+}
+
+.internship-list li {
+    padding: 10px 0;
+
+    color: #d6ddd9;
+
+    border-bottom: 1px solid #202a25;
+}
+
+.internship-list li::before {
+    content: "↗";
+
+    color: var(--green);
+
+    margin-right: 12px;
+}
+
+.report-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: var(--green);
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+/* DOCUMENTS */
+
+.document-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 45px;
+}
+
+.document {
+    padding: 22px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 16px;
+
+    background: var(--card);
+
+    color: #d9dfdc;
+
+    transition: .3s;
+}
+
+.document:hover {
+    border-color: var(--green);
+
+    transform: translateY(-4px);
+}
+
+.document span {
+    color: var(--green);
+
+    display: block;
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.project {
+    min-height: 300px;
+
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition: .3s;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+
+    border-color: #317354;
+}
+
+.project-number {
+    color: var(--green);
+}
+
+.project h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 27px;
+
+    margin: 20px 0 10px;
+}
+
+.project p {
+    color: var(--gray);
+}
+
+.tags {
+    display: flex;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.tag {
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    background: #1b2520;
+
+    color: #a9b6af;
+
+    font-size: 11px;
+}
+
+/* SKILLS */
+
+.skills-section {
+    background: var(--green);
+
+    color: #07140d;
+}
+
+.skills-section .section-number {
+    color: #064d2e;
+}
+
+.skills-section .section-title {
+    color: #07140d;
+}
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 40px;
+}
+
+.skill {
+    padding: 12px 18px;
+
+    background: #07140d;
+
+    color: white;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+}
+
+/* CERTIFICATES */
+
+.certificate-box {
+    margin-top: 45px;
+
+    padding: 45px;
+
+    border: 1px dashed #3a4740;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    color: var(--gray);
+}
+
+/* CONTACT */
+
+.contact {
+    background: #0d1210;
+}
+
+.contact h2 {
+    max-width: 800px;
+}
+
+.contact-links {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+.contact-link {
+    padding: 14px 20px;
+
+    border: 1px solid #34413b;
+
+    border-radius: 100px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.contact-link:hover {
+    color: var(--green);
+
+    border-color: var(--green);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 8%;
+
+    border-top: 1px solid var(--line);
+
+    color: #68736d;
+
+    font-size: 13px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .document-grid {
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+}
+
+@media(max-width:550px) {
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .internship-card {
+        padding: 28px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#home" class="logo">
+SACHIN<span>.</span>
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#internship">Internship</a></li>
+
+<li><a href="#documents">EXIM</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+M.COM INTERNATIONAL BUSINESS
+</div>
+
+<h1>
+SACHIN<br>
+<span>V.</span>
+</h1>
+
+<p>
+International Business student exploring
+EXIM documentation, international trade,
+shipping and logistics through practical
+learning and industry exposure.
+</p>
+
+<div class="buttons">
+
+<a href="#internship" class="btn btn-primary">
+Explore My Work
+</a>
+
+<a href="resume.pdf"
+class="btn btn-secondary"
+target="_blank">
+View Resume ↗
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-number">
+01 / ABOUT ME
+</div>
+
+<h2 class="section-title">
+Learning beyond the classroom.
+</h2>
+
+<p class="section-text">
+I am Sachin V, an M.Com International Business
+student interested in international trade,
+EXIM documentation, shipping and logistics.
+My academic work and internship experience
+have helped me understand how documentation,
+transportation, customs and trade finance
+connect within international business.
+</p>
+
+<div class="about-grid">
+
+<div class="info-card">
+
+<h3>Academic Focus</h3>
+
+<p>
+M.Com International Business
+<br><br>
+Focus areas include international trade,
+trade finance, shipping, logistics and
+export-import documentation.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Professional Interest</h3>
+
+<p>
+EXIM operations, documentation,
+freight forwarding, customs procedures,
+shipping and international trade.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTERNSHIP -->
+
+<section class="internship" id="internship">
+
+<div class="section-number">
+02 / INTERNSHIP
+</div>
+
+<h2 class="section-title">
+Industry experience.
+</h2>
+
+<div class="internship-card">
+
+<div class="company">
+ROOTS INDUSTRIES PRIVATE LIMITED
+</div>
+
+<h3>
+EXIM Documentation
+</h3>
+
+<p>
+My internship provided practical exposure
+to export-import documentation and helped
+me understand the role of different documents
+in international trade transactions.
+</p>
+
+<ul class="internship-list">
+
+<li>
+Understanding export and import documentation workflows
+</li>
+
+<li>
+Studying commercial and goods-related documents
+</li>
+
+<li>
+Learning transport and customs documentation
+</li>
+
+<li>
+Understanding trade payment documentation
+</li>
+
+<li>
+Connecting documentation with practical EXIM processes
+</li>
+
+</ul>
+
+<a href="internship-report.pdf"
+class="report-button"
+target="_blank">
+
+↗ View Full Internship Report
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- EXIM DOCUMENTS -->
+
+<section id="documents">
+
+<div class="section-number">
+03 / EXIM DOCUMENTATION
+</div>
+
+<h2 class="section-title">
+Documents I studied.
+</h2>
+
+<div class="document-grid">
+
+<div class="document">
+<span>GOODS</span>
+Commercial Invoice
+</div>
+
+<div class="document">
+<span>GOODS</span>
+Packing List
+</div>
+
+<div class="document">
+<span>GOODS</span>
+Certificate of Origin
+</div>
+
+<div class="document">
+<span>GOODS</span>
+Health Certificate
+</div>
+
+<div class="document">
+<span>GOODS</span>
+Fumigation Certificate
+</div>
+
+<div class="document">
+<span>TRANSPORT</span>
+Bill of Lading
+</div>
+
+<div class="document">
+<span>TRANSPORT</span>
+Airway Bill
+</div>
+
+<div class="document">
+<span>CUSTOMS</span>
+Shipping Bill
+</div>
+
+<div class="document">
+<span>CUSTOMS</span>
+Bill of Entry
+</div>
+
+<div class="document">
+<span>INSURANCE</span>
+Marine Insurance
+</div>
+
+<div class="document">
+<span>PAYMENT</span>
+Letter of Credit
+</div>
+
+<div class="document">
+<span>PAYMENT</span>
+Bill of Exchange
+</div>
+
+<div class="document">
+<span>BANKING</span>
+Bank Certificate of Payment
+</div>
+
+<div class="document">
+<span>BANKING</span>
+BRC
+</div>
+
+<div class="document">
+<span>BANKING</span>
+FIRC
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="section-number">
+04 / PROJECTS
+</div>
+
+<h2 class="section-title">
+Things I've worked on.
+</h2>
+
+<div class="project-grid">
+
+<div class="project">
+
+<div>
+
+<div class="project-number">
+01
+</div>
+
+<h3>
+EXIM Documentation
+</h3>
+
+<p>
+Study of export and import documents,
+their purpose, preparation, parties involved
+and role in international trade.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">EXIM</span>
+
+<span class="tag">Documentation</span>
+
+<span class="tag">Trade</span>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<div>
+
+<div class="project-number">
+02
+</div>
+
+<h3>
+Container & Shipping
+</h3>
+
+<p>
+Academic presentation covering container
+types, dimensions, CBM calculation,
+tracking technologies and shipping
+intermediaries.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">Shipping</span>
+
+<span class="tag">Containers</span>
+
+<span class="tag">Logistics</span>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<div>
+
+<div class="project-number">
+03
+</div>
+
+<h3>
+Trade Finance Case Study
+</h3>
+
+<p>
+Academic work exploring Letter of Credit,
+Bill of Exchange and other trade-payment
+documentation through practical examples.
+</p>
+
+</div>
+
+<div class="tags">
+
+<span class="tag">LC</span>
+
+<span class="tag">Trade Finance</span>
+
+<span class="tag">Case Study</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="skills-section" id="skills">
+
+<div class="section-number">
+05 / SKILLS
+</div>
+
+<h2 class="section-title">
+What I'm building.
+</h2>
+
+<div class="skills">
+
+<span class="skill">EXIM Documentation</span>
+
+<span class="skill">International Trade</span>
+
+<span class="skill">Shipping Documentation</span>
+
+<span class="skill">Trade Finance</span>
+
+<span class="skill">Import & Export Process</span>
+
+<span class="skill">Logistics</span>
+
+<span class="skill">MS Office</span>
+
+<span class="skill">Presentation</span>
+
+<span class="skill">Research & Analysis</span>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATES -->
+
+<section id="certificates">
+
+<div class="section-number">
+06 / CERTIFICATES
+</div>
+
+<h2 class="section-title">
+Certifications & achievements.
+</h2>
+
+<div class="certificate-box">
+
+<p>
+Your certificates will appear here.
+</p>
+
+<br>
+
+<p>
+Add certificate PDFs, course certificates,
+workshops and achievements as you collect them.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="section-number">
+07 / CONTACT
+</div>
+
+<h2 class="section-title">
+Let's connect.
+</h2>
+
+<p class="section-text">
+
+Interested in opportunities related to
+international business, EXIM, shipping
+and logistics?
+
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:YOUR-EMAIL@example.com"
+class="contact-link">
+
+✉ Email
+
+</a>
+
+<a href="https://www.linkedin.com/"
+target="_blank"
+class="contact-link">
+
+in LinkedIn
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<span>
+© 2026 Sachin V
+</span>
+
+<span>
+International Business • EXIM • Shipping
+</span>
+
+</footer>
+
+</body>
+</html>
